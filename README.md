@@ -13,6 +13,7 @@ This is an example of how you may give instructions on setting up your project l
 
 ```commandline
 $ mvn clean compile assembly:single
+$ copy hbase-site.xml to current folder
 $ java -cp .:./target/PhoneixTest-1.0-SNAPSHOT-jar-with-dependencies.jar org.example.App  user1@AMDEV.COM user1.keytab users_data
 
 # if not work, please add --add-exports java.security.jgss/sun.security.krb5=ALL-UNNAMED in your command.
